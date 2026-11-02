@@ -9,9 +9,9 @@
        CONFIGURACIÓN · EDITA SOLO ESTE BLOQUE
        ========================================================== -->
   <script>
-    const CONFIG = {
+       const CONFIG = {
       // Título que aparece en pantalla (admite tildes y ñ)
-      titulo: 'Mi experiencia en realidad aumentada',
+      titulo: 'Mi experiencia en realidad aumentada angel',
 
       // Archivo .patt del marcador (créalo con generador.html)
       marcador: 'marcador.patt',
@@ -20,18 +20,15 @@
       tipo: 'modelo',
 
       // Archivo dentro del repositorio. 'modelo': .glb  ·  'video': .mp4
-      archivo: '3dmodel.glb',
+      archivo: 'pruebatm.glb',
 
-      // Ajustes de posición. 1 = el ancho del cuadro negro del marcador
-      // Dónde va a estar el marcador (solo cambia algo para 'modelo'):
-      //   'mesa'  → marcador acostado (mesa, piso): el modelo queda de pie sobre el papel
-      //   'pared' → marcador vertical (pared, pantalla, afiche): el modelo mira de frente a la cámara
+      // Dónde va a estar el marcador: 'mesa' (acostado) o 'pared' (vertical)
       orientacion: 'mesa',
 
       escala: 1,        // tamaño del contenido
-      altura: 0,        // 'mesa': cuánto flota sobre el papel · 'pared': cuánto sube (negativo = baja)
-      giro: 0,          // rotación en grados sobre su propio eje vertical (180 = lo voltea)
-      animarGiro: true  // el modelo gira lentamente sobre sí mismo (solo para 'modelo')
+      altura: 0.5,        // sube o baja el contenido (negativo = baja)
+      giro: 0,          // grados sobre su propio eje (180 = lo voltea)
+      animarGiro: true  // el modelo gira lentamente sobre sí mismo
     };
   </script>
   <!-- ========================================================== -->
